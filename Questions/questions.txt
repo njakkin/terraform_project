@@ -1,0 +1,26 @@
+What is your proudest achievement? It can be a personal project or something you have worked
+on professionally. Just a short paragraph is fine, but we would love to know why you are proud of
+it.
+
+In my First company, one of the system database(Master) is corrupted. As I'm very new to Database
+Administration and I only had the theory knowledge of how to rebuild the Master, I informed my Lead
+that I will work on it and I was very fortunate that my lead gave me chance to work on it. I was
+successful in retrieving the data. I was appreciated by all my team members, and I felt very proud of it, as I was a fresher and it was my first appreciation. Even though I got more
+appreciations, I still cherish that as one of my best acheivements.
+
+Tell us about a technical book or article you read recently, why you liked it, and why we should
+read it as well.
+
+Recently I started reading a book on Site Reliability Engineering (How Google runs on production
+systems) from O'Reilly. As a devops Engineer, i want to enhance my skills towards the best practices in the industry. It really gives a clear picture some of the best parctices for an SRE. Many
+might have already read it, if not, then it’s my suggestion.
+
+2.Jenkins
+
+One of the biggest problems of Jenkins is its scalability. To achieve a decent result we run our builds
+on dedicated Jenkins slaves. These EC2 instances are running all the time. But this solution is not
+cost-effective. What could be a good approach to provision these slaves in AWS?
+
+Cost-effectiveness was also encountered in Lowes. We went through the problem, and had discussions with the SRE team, and finally came up with the solution of using Spot Insatances. 
+
+With Spot Instances, we can spin up instances for a particular time and then terminate them after certain time. So we can delete the worker nodes(most) in the evening as they will not be used much at night so this way we can reduce cost.

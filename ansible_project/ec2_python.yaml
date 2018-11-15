@@ -1,0 +1,8 @@
+  - name: Install python on EC2
+    hosts: webserver
+    gather_facts: False
+    remote_user: ubuntu
+    become: yes
+    pre_tasks:
+      - name: 'install python'
+        raw: 'sudo apt-get -y update && sudo apt-get -y install python'
